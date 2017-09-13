@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace Flyweight
+{
+    public class PanelHouse : House
+    {
+        public PanelHouse()
+        {
+            stages = 16;
+        }
+
+        public override void Build(double longitude, double latitude)
+        {
+            Console.WriteLine($"Построен панельный дом из 16 этажей; координаты: {latitude} широты и {longitude} долготы");
+        }
+    }
+}
